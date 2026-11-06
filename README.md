@@ -34,7 +34,7 @@ El resultado es `main.pdf`.
 ### Dependencias
 
 Paquetes de LaTeX: `fontenc`, `inputenc`, `babel` (idioma `spanish`), `lmodern`, `microtype`,
-`geometry`, `graphicx`, `booktabs`, `tabularx`, `float`, `xcolor`, `listings`, `csquotes`,
+`geometry`, `graphicx`, `booktabs`, `tabularx`, `float`, `enumitem`, `xcolor`, `listings`, `csquotes`,
 `biblatex` con `biblatex-ieee`, y `hyperref`. Además se necesita el programa `biber`.
 MiKTeX instala automáticamente los paquetes que falten; en TeX Live vienen incluidos en el
 esquema completo (`scheme-full`).
