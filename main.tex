@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper]{article}
+
+% Datos de la actividad
+\newcommand{\codigoactividad}{FORM-FB-01}
+\newcommand{\nombreactividad}{Fichas bibliográficas: fundamentos de sistemas distribuidos y arquitecturas distribuidas}
+\newcommand{\integrantes}{Castro Coello Mario Sebastián}
+\newcommand{\repositorio}{https://github.com/reyshadow0/isr701-form-fb-01}
+\newcommand{\fechaentrega}{5 de noviembre de 2026}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figuras/}}
+
+% Permite cortar URL largas en la bibliografía (evita desbordes)
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  showstringspaces=false,
+  extendedchars=true,
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+           {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+           {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {ü}{{\"u}}1 {¿}{{?`}}1 {¡}{{!`}}1
+}
+\renewcommand{\lstlistingname}{Código}
+
+\hypersetup{pdftitle={\codigoactividad: \nombreactividad}}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {\large\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+  \vspace{0.3cm}
+  {Facultad de Ciencias de la Computación\par}
+  {Carrera de Software\par}
+  \vspace{2.5cm}
+  {\large Aplicaciones Distribuidas (ISR-701)\par}
+  \vspace{1.5cm}
+  {\Large\bfseries \codigoactividad\par}
+  \vspace{0.4cm}
+  {\LARGE \nombreactividad\par}
+  \vfill
+  \begin{tabular}{@{}rl@{}}
+    \textbf{Estudiante:}       &\begin{tabular}[t]{@{}l@{}}\integrantes\end{tabular} \\[2pt]
+    \textbf{Docente:}          & Gleiston Cicerón Guerrero Ulloa, PhD \\
+    \textbf{Nivel / paralelo:} & Séptimo nivel / B \\
+    \textbf{Periodo:}          & SPA 2026--2027 \\
+    \textbf{Fecha:}            & \fechaentrega \\
+  \end{tabular}
+  \par\vspace{1cm}
+  {\small Repositorio: \url{\repositorio}\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Fichas bibliográficas}
+
+\subsection{Ficha 1}
+\begin{description}
+  \item[Referencia (IEEE):]
+  \item[DOI o ISBN verificado:]
+  \item[Resumen:]
+  \item[Dato concreto:]
+  \item[Nota personal:]
+\end{description}
+
+\subsection{Ficha 2}
+\begin{description}
+  \item[Referencia (IEEE):]
+  \item[DOI o ISBN verificado:]
+  \item[Resumen:]
+  \item[Dato concreto:]
+  \item[Nota personal:]
+\end{description}
+
+\subsection{Ficha 3}
+\begin{description}
+  \item[Referencia (IEEE):]
+  \item[DOI o ISBN verificado:]
+  \item[Resumen:]
+  \item[Dato concreto:]
+  \item[Nota personal:]
+\end{description}
+
+\subsection{Ficha 4}
+\begin{description}
+  \item[Referencia (IEEE):]
+  \item[DOI o ISBN verificado:]
+  \item[Resumen:]
+  \item[Dato concreto:]
+  \item[Nota personal:]
+\end{description}
+
+\subsection{Ficha 5}
+\begin{description}
+  \item[Referencia (IEEE):]
+  \item[DOI o ISBN verificado:]
+  \item[Resumen:]
+  \item[Dato concreto:]
+  \item[Nota personal:]
+\end{description}
+
+\section{Declaración de uso de inteligencia artificial}
+
+\begin{table}[H]
+  \centering
+  \caption{Herramientas de inteligencia artificial usadas como apoyo}
+  \label{tab:declaracion-ia}
+  \begin{tabularx}{\textwidth}{@{}llXX@{}}
+    \toprule
+    \textbf{Herramienta} & \textbf{Versión} & \textbf{Para qué se usó} & \textbf{Cómo se verificó lo obtenido} \\
+    \midrule
+     & & & \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\printbibliography[heading=bibintoc,title={Referencias}]
+
+\end{document}
